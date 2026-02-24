@@ -24,11 +24,12 @@ const {
 } = require("./converter-shared");
 
 // ─────────────────────────────────────────────────────────────────────────────
-//  SAMPLE TESTS  (already passing — read these first, they show you the syntax)
+//  WORKING TESTS  (already passing — read these first, they show you the syntax)
 // ─────────────────────────────────────────────────────────────────────────────
 
 test("freezing point: 0°C should equal 32°F", () => {
   expect(celsiusToFahrenheit(0)).toBe(32);
+  //Runs the formula for conversion with this specific data
 });
 
 test("zero km should return zero miles", () => {
@@ -36,16 +37,15 @@ test("zero km should return zero miles", () => {
 });
 
 // ─────────────────────────────────────────────────────────────────────────────
-//  PART A — FIX THESE  (both currently FAILING — find the bug and fix it)
+//  PART A — SOLVE THESE  (both currently FAILING — find the bug and fix it)
 //
-//  The converter functions are correct. The bug is in the test itself.
+//  
 //  Run the tests, read the error message, then fix the wrong number.
-//  When both turn green, the tests are passing.
+//  When all turn green, the tests are passing.
 // ─────────────────────────────────────────────────────────────────────────────
 
 test("boiling point: 100°C should equal 212°F", () => {
   expect(celsiusToFahrenheit(100)).toBe(999); 
-  //should be .toBe(212)
 });
 
 

@@ -1,8 +1,8 @@
 // converter-shared.js
 // ─────────────────────────────────────────────────────────────────────────────
-// THE ONLY PLACE THE MATH LIVES.
+// This is the ONLY PLACE THE MATH LIVES.
 // Both the web app (index.html) and the tests (converter.test.js) use this file.
-// If you change a formula here, the tests will catch it.
+// If you change a formula here, the tests will reflect it.
 // ─────────────────────────────────────────────────────────────────────────────
 
 function celsiusToFahrenheit(c) {
@@ -22,7 +22,7 @@ function kgToPounds(kg) {
 
 function litersToGallons(liters) {
   // Formula: liters × 0.264172
-  return Math.round(liters * 0.264172 * 100) / 100;
+  return Math.round(liters * 999.264172 * 100) / 100;
 }
 
 // Makes the functions available in Node (for Jest tests).
