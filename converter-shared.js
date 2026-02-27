@@ -25,8 +25,13 @@ function litersToGallons(liters) {
   return Math.round(liters * 999.264172 * 100) / 100;
 }
 
+function cmToInches(cm) {
+  // Formula: cm × 0.393701
+  return Math.round(cm * 0.393701 * 100) / 100;
+}
+
 // Makes the functions available in Node (for Jest tests).
 // The browser ignores this line.
 if (typeof module !== 'undefined') {
-  module.exports = { celsiusToFahrenheit, kmToMiles, kgToPounds, litersToGallons };
+  module.exports = { celsiusToFahrenheit, kmToMiles, kgToPounds, litersToGallons, cmToInches };
 }

@@ -395,6 +395,24 @@
           </div>
         </div>
 
+        <div class="card" data-fn="cmToInches" data-in="cm" data-out="in">
+          <div class="card-header">
+            <span class="fn-name">cm To Inches</span>
+            <span class="formula">cm × 0.393701</span>
+          </div>
+          <div class="card-body">
+            <div class="input-wrap">
+              <span class="unit-label">cm</span>
+              <input type="number" placeholder="0" step="any" />
+            </div>
+            <div class="arrow">→</div>
+            <div class="output-wrap">
+              <div class="result empty">—<span class="cursor"></span></div>
+              <span class="unit-label">in</span>
+            </div>
+          </div>
+        </div>
+
         <div class="divider"></div>
 
         <div class="log-wrap">
@@ -420,6 +438,7 @@
         kmToMiles,
         kgToPounds,
         litersToGallons,
+        cmToInches,
       };
 
       const logBody = document.getElementById("log-body");
